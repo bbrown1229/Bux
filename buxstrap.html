@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<link rel="stylesheet" href="buxstrap.css">
+<link rel="stylesheet" href="icons/styles.css">
+<script src="jquery-2.2.1.min.js"></script>
+</head>
+
+<body>
+<!--Main Navigation-->
+<nav>
+   <ul>
+      <li>Nav Item 1</li>
+      <li>Nav Item 2</li>
+      <li class="cta">Sign up</li>
+   </ul>
+</nav>
+<!--
+<nav id="subNav">
+   <ul>
+      <li>SubNav Item 1</li>
+      <li>SubNav Item 2</li>
+   </ul>
+</nav>
+-->
+<!--SubNav for Dashboard purposes-->
+<nav id="dashboardNav">
+   <h1>Welcome</h1>
+   <ul>
+      <li class="active">Dashboard Item 1</li>
+      <li>SubNav Item 2</li>
+   </ul>
+</nav>
+<!--Section for hero image-->
+<section class="hero">
+   <h1>Unlock full access</h1>
+   <h2>Your ideas should be limitless.</h2>
+   <h3>Upgrade to API Platform Pro.</h3>
+</section>
+<!--Basic Form section-->
+<section class="formContainer">
+   <h1>Get your Bandwidth number. Start calling and texting in seconds.</h1>
+   <form class="basicForm">
+      <label for="fullName">Full name:</label>
+      <input type="text" id="fullName"/>
+      <label for="email">Email:</label>
+      <input type="text" id="email"/>
+      <a class="helpLink" >Why do we need this?</a>
+      <input type="checkbox" id="action"><label for="action"></label><span>I agree to the <a>Terms and Conditions</a></span>
+      <input type="submit" value="Let's do this" />
+   </form>  
+</section>
+<!--Credit Card section-->
+<section class="creditCard">
+   <div id="ccProgress">
+      <div id="mainContact" class="ccProgressStep completed">
+         <div class="ccStep">1</div>
+         <div class="progressSnapshot">
+            <h1>Main Contact</h1>
+            <p>John Smith, Bandwidth</p>
+         </div>
+      </div>
+      <div id="creditCard" class="ccProgressStep">
+         <div class="ccStep">2</div>
+         <div class="progressSnapshot">
+            <h1>Credit Card</h1>
+            <p>Ending in 1234</p>
+         </div>
+      </div>
+      <div id="address" class="ccProgressStep">
+         <div class="ccStep">3</div>
+         <div class="progressSnapshot">
+            <h1>Address</h1>
+            <p>900 Main Campus Blvd., Suite 500<br>Raleigh, NC 27606</p>
+         </div>
+      </div>
+      <div id="activate" class="ccProgressStep">
+         <div class="ccStep">4</div>
+         <div class="progressSnapshot">
+            <h1>Activate</h1>
+         </div>
+      </div>
+   </div>
+   <div id="ccForm">
+      <form class="basicForm">
+         <h1>Only pay for what you use.</h1>
+         <label for="ccNumber">Credit card number:</label>
+         <input type="text" id="ccNumber" disabled="disabled" />
+         <label for="expiration">Expiration date:</label>
+         <select type="text" id="expirationMonth" class="half"><option value="" disabled selected>- Month -</option></select><select type="text" id="expirationYear" class="half"><option value="" disabled selected>- Year -</option></select>
+         <label for="cvv">CVV:</label>
+         <input type="text" id="cvv" class="half"/>
+         <input type="submit" value="Continue" disabled />
+      </form> 
+   </div>
+</section>
+<!--Dashboard layout with left hand nav-->
+<!--Use with "Main Navigation" for complete UI-->
+<section class="leftNavDashboard">
+   <nav></nav><!--
+   --><section class="listView">
+      <div class="listHeader">
+         <span class="headerLabel">Demo Label</span>
+      </div>
+      <input type="search" class="searchField" placeholder="Search" />
+      <div class="listContainer">
+         <div class="listItem">
+            <span class="mainListItemText">Arron Harris</span>
+            <span class="secondaryListItemText">aharris</span>
+         </div>
+         <div class="listItem selected">
+            <span class="mainListItemText">Admin user</span>
+            <span class="secondaryListItemText">qaadmin</span>
+         </div>
+         <div class="listItem">
+            <span class="mainListItemText">Arron Harris</span>
+            <span class="secondaryListItemText">aharris</span>
+         </div>
+         <div class="listItem">
+            <span class="mainListItemText">Arron Harris</span>
+            <span class="secondaryListItemText">aharris</span>
+         </div>
+         <div class="listItem">
+            <span class="mainListItemText">Arron Harris</span>
+            <span class="secondaryListItemText">aharris</span>
+         </div>
+         <div class="listItem">
+            <span class="mainListItemText">Arron Harris</span>
+            <span class="secondaryListItemText">aharris</span>
+         </div>
+      </div>
+   </section><!--
+   --><section class="detailView">
+      <h1 class="accordionHeader">Accordion Header</h1>
+      <section class="accordion">
+         <div class="accSection open">
+            <i class="icons8-forward"></i><h1>Test Content</h1>
+            <section class="accContent">
+               <label>Input Label:</label>
+               <input type="text" />
+               <label>Input Label:</label>
+               <input type="text" />
+               <label>Input Label:</label>
+               <input type="text" />
+               <label>Input Label:</label>
+               <input type="text" />
+               <label>Input Label:</label>
+               <input type="text" />
+               <label>Input Label:</label>
+               <input type="text" />
+            </section>
+         </div>
+         <div class="accSection">
+            <i class="icons8-forward"></i><h1>Test Content</h1>
+            <section class="accContent">
+               <label>Input Label:</label>
+               <input class="half" type="text" />
+            </section>
+         </div>
+         <div class="accSection">
+            <i class="icons8-forward"></i><h1>Test Content</h1>
+            <section class="accContent">
+               <label>Input Label:</label>
+               <input class="half" type="text" />
+            </section>
+         </div>
+      </section>
+   </section>
+</section>
+<!--Buttons-->
+<section class="buttons">
+   <button>Demo button</button>
+   <button class="submit">Demo submit</button>
+   <button class="secondary">Demo secondary</button>
+</section>
+
+<script>
+$('.progressSnapshot > h1').append('&nbsp;&nbsp;&nbsp;');
+$('.half').prev('label').append('<br>');
+$('.half').next().not('input:submit').css('margin-right','0px');
+
+</script>
+</body>
+</html>
